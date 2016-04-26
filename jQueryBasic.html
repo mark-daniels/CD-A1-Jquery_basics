@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment I: jQuery Functions</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+	<!-- HEADER -->
+		<div id="header">
+			<img id="logo" src="img/md_logo.png" alt="Logo's alt attribute">
+			<h1 class="inlineBlock">&nbsp;&raquo; jQuery<span> Functions</span></h1>
+		</div>
+	<!-- MAIN NAVIGATION -->
+		<div id="main_nav">
+			<ul>
+				<li><a href="#">.addClass</a></li>
+				<li><a href="#">.removeClass</a></li>
+				<li><a href="#">.after</a></li>
+				<li><a href="#">.append</a></li>
+				<li><a href="#">.attr</a></li>
+				<li><a href="#">.before</a></li>
+				<li><a href="#">.html</a></li>
+				<li><a href="#">.text</a></li>
+				<li><a href="#">.val</a></li>
+				<li><a href="#">.toggle</a></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><a href="#">.hide</a></li>
+				<li><a href="#">.show</a></li>
+				<li><a href="#">.slideDown</a></li>
+				<li><a href="#">.slideToggle</a></li>
+				<li><a href="#">.slideUp</a></li>
+				<li><a href="#">.fadeOut</a></li>
+				<li><a href="#">.fadeIn</a></li>
+				<li><a href="#">.focus</a></li>
+				<li><a href="#">.click</a></li>
+			</ul>
+		</div>
+	<!-- CONTENT 1 - 6 -->
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="add_class">.addClass</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.addClass(className)</h2>
+				<p>Adds the specified class to each element in the set of matched elements.</p>
+				<p>$("p:nth-of-type(2)").addClass("adding_class");</p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="remove_class">.removeClass</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.removeClass(className)</h2>
+				<p>Removes a single, multiple, or all classes from each element in the set of matched elements.</p>
+				<p>$("p:nth-of-type(2)").removeClass("adding_class");</p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="after">.after</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.after(content)</h2>
+				<p id="this_p">Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+				<p>$("#this_p").after("&#60;span class='red'&#62; Added after first paragraph&#60;/span&#62;");</p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="append">.append</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.append(content[, content])</h2>
+				<p id="this_p2">Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+				<p>$("#this_p2").append("&#60;span class='red'&#62; Appended to this paragraph&#60;/span&#62;");</p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="attr">.attr</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2 id="#this_h2">.attr(attributeName)</h2>
+				<p>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+				<p>$("#this_p3").text($("img").attr("alt"));</p>
+				<p id="this_p3"></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="before">.before</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.before(content)</h2>
+				<p id="this_p4">Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+				<p>$("#this_p4").before("&#60;span class='red'&#62;Added before paragraph&#60;/span&#62;");</p>
+			</div>
+		</div>
+	<!-- 7 - 11 -->
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="html">.html</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.html()</h2>
+				<p>Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element. <span id="this_p5"></span></p>
+				<p>$("#this_p5").html("&#60;a href='#'&#62;&#60;span class='red'&#62;more ...&#60;/span&#62;&#60;/a&#62;");</p>
+			</div>
+		</div>
+
+		<div id="this_div" class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="text">.text</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.text()</h2>
+				<p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
+				<p>$("#this_div p:last-child").text("Some new text.");</p>
+				<p></p>
+			</div>
+		</div>
+
+		<div id="this_div2" class="content_row">
+			<!-- LEFT CONTENT -->
+			<div class="inlineBlock">
+				<input type="text" placeholder="Enter your name">
+				<button id="val" value="button value">.val</button>
+			</div>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.val()</h2>
+				<p>Get the current value of the first element in the set of matched elements or set the value of every matched element.</p>
+				<p>$("#this_div2 p:last-child").text($("#this_div2 input").val());</p>
+				<p></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="toggle">.toggle</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.toggle(duration ] [, complete ])</h2>
+				<p>Display or hide the matched elements.</p>
+				<p id="this_p6" style="display: none">
+					$("#this_p6").toggle(2000, function() { $("#this_p6b").text("All done!"); });
+				</p>
+				<p id="this_p6b"></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="hide">.hide</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.hide([duration ] [, complete ])</h2>
+				<p>Hide the matched elements.</p>
+				<p id="this_p7">
+					$("#this_p7").hide(2000, function() { $("#this_p7b").text("All done!"); });
+				</p>
+				<p id="this_p7b"></p>
+			</div>
+		</div>
+	<!-- 12 - 16 -->
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="show">.show</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.show([duration ] [, complete ])</h2>
+				<p>.addClass adds the specified class to each element in the set of matched elements.</p>
+				<p id="this_p8" style="display:none">
+					$("#this_p7").show(2000, function() { $("#this_p8").show(2000, function() { $("#this_p8b").text("All done!"); }); });
+				</p>
+				<p id="this_p8b"></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="slideDown">.slideDown</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.slideDown([duration ] [, complete ])</h2>
+				<p id="this_p9" class="slideIt">
+					Display the matched elements with a sliding motion.
+				</p>
+				<p>
+					$("#this_p9").slideDown(3000, function() { $("#this_p9b").slideDown(3000, function() { $("#this_p9b").text("All done!"); }); });
+				</p>
+				<p id="this_p9b" class="slideIt"></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="slideToggle">.slideToggle</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.slideToggle([duration ] [, easing ] [, complete ])</h2>
+				<p id="this_p10" class="slideIt">
+					Display or hide the matched elements with a sliding motion.
+				</p>
+				<p>$("#this_p10").slideToggle(3000, function() { $("#this_p10b").slideToggle("slow", function() { $("#this_p10b").text("All done!"); }); });</p>
+				<p id="this_p10b" class="slideIt"></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="slideUp">.slideUp</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.slideUp([duration ] [, complete ])</h2>
+				<p>Hide the matched elements with a sliding motion.</p>
+				<p id="this_p11">
+					$("#this_p11").slideUp(3000, function() { $("#this_p11b").slideUp("slow", function() { alert("All done!"); }); });
+				</p>
+				<p id="this_p11b"></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="fadeOut">.fadeOut</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.fadeOut([duration ] [, complete ])</h2>
+				<p>Hide the matched elements by fading them to transparent.</p>
+				<p id="this_p12">Hide the matched elements by fading them to transparent.</p>
+				<p id="this_p12b">
+					$("#this_p12").fadeOut(3000, function() { $("#this_p12b").fadeOut(5000); });
+				</p>
+			</div>
+		</div>
+	<!-- 17 - 19 -->
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="fadeIn">.fadeIn</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.fadeIn([duration ] [, complete ])</h2>
+				<p id="this_p13" style="display:none;">Display the matched elements by fading them to opaque.</p>
+				<p class="slideIts"></p>
+				<p id="this_p13b">
+					$("#this_p13").fadeIn(3000, function() { $("#this_p13b").text("All done!"); });
+				</p>
+			</div>
+		</div>
+
+		<div id="focus" class="content_row">
+			<!-- LEFT CONTENT -->
+			<input type="text" placeholder="Click here!">
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.focus(handler)</h2>
+				<p>Bind an event handler to the “focus” JavaScript event, or trigger that event on an element.</p>
+				<p id="this_p14">
+					$("#focus input").focus(function() { $("#this_p14b").text("You clicked inside the box!"); });
+				</p>
+				<p id="this_p14b"></p>
+			</div>
+		</div>
+
+		<div class="content_row">
+			<!-- LEFT CONTENT -->
+			<button id="click">.click</button>
+			<!-- CORRESPONDING RIGHT CONTENT -->
+			<div class="inlineBlock">
+				<h2>.click(handler)</h2>
+				<p>Bind an event handler to the "click" JavaScript event, or trigger that event on an element.</p>
+				<p id="this_p15">
+					$("#click").click(function() { $("#this_p15b").text("You clicked the button!"); });
+				</p>
+				<p id="this_p15b"></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 0px;
+	color: #333333;
+}
+
+/* Since font-size is set to zero above,
+	set the font-size for each element
+	that has text that needs to be visible */
+h1, h2, ul li, ul li a, p, span, button, a, input {
+	font-size: 12px;
+}
+
+/* WRAPPER ------------------------ */
+#wrapper {
+	width: 970px;
+	margin: 0px auto;
+	background-color: #ffffff;
+}
+
+/* HEADER ------------------------- */
+#header {
+	height: 100%;
+	text-align: center;
+	padding: 10px 0px;
+}
+	#header h1, #header h1 span {
+		font-size: 42px;
+		color: #006699;
+	}
+
+/* NAVIGATION ---------------- */
+ul {
+	list-style-type: none;
+}
+	ul li {
+		display: inline-block;
+	}
+	ul a {
+		text-decoration: none;
+	}
+hr {
+	margin: 5px;
+}
+
+/* MAIN NAVIGATION ---------------- */
+#main_nav {
+	height: 60px;
+	background: linear-gradient(#dbe1e6, #ffffff, #6699cc);
+	padding: 5px 0px;
+	border-radius: 20px;
+}
+	#main_nav ul li:before, 
+	#main_nav ul li:last-child:after {
+		content: "\00BB";
+		font-size: 20px;
+		color: #999999;
+		padding: 15px;
+	}
+	#main_nav ul li a {
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: bold;
+		color: #666666;
+	}
+
+/* CONTENT ROW------------------- */
+.content_row {
+	padding: 10px;
+	width: 950px;
+	height: 100%;
+	border-bottom: 1px solid #dddddd;
+}
+	/* LEFT CONTENT ------------------- */
+	.content_row button, input {
+		background: linear-gradient(#006699, #6699cc, #006699);
+		margin: 0px 10px 10px 10px;
+		width: 100px;
+		height: 30px;
+		color: #ffffff;
+		border-radius: 10px;
+	}
+	.content_row input {
+		background: transparent;
+		text-align: center;
+		color: #333333;
+	}
+	#this_div2 input {
+		display: block;
+	}
+
+	/* RIGHT CONTENT ------------------ */
+	.content_row h2 {
+		font-size: 18px;
+		background-color: #dddddd;
+		border-radius: 5px;
+		padding: 3px 0px 0px 15px;
+	}
+	.content_row p {
+		font-size: 14px;
+		width: 790px;
+		padding: 5px 15px;
+	}
+	.content_row p:nth-of-type(2) {
+		font-style: italic;
+	}
+
+/* CLASSES ------------------------ */
+.inlineBlock {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.adding_class {
+	font-weight: bold;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.slideIt {
+	background: #006699;
+	color: #ffffff;
+    height: 40px;
+    display: none;
+}
